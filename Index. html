@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aswin R — UI/UX Designer</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark text-light">
+  <div class="container-fluid p-0">
+    <div class="row g-0">
+      <!-- Left Profile Section (fixed, 100vh) -->
+      <aside class="col-lg-3 bg-black position-sticky top-0 vh-100 d-flex align-items-center justify-content-center profile-wrap">
+        <div class="profile-card text-center" aria-label="Profile card">
+          <div class="profile-border"></div>
+          <img src="https://via.placeholder.com/160x160" alt="Portrait of Aswin R" class="rounded-circle shadow-sm profile-pic" />
+          <h2 class="fw-bold name-gradient mt-3 mb-1">Aswin R</h2>
+          <p class="text-light mb-3 title-glow">UI/UX Designer</p>
+
+          <div class="d-grid gap-2 w-100 mt-2">
+            <a href="https://github.com/" target="_blank" rel="noopener" class="btn btn-outline-gold">
+              <i class="fab fa-github"></i> <span class="ms-1">GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="btn btn-outline-gold">
+              <i class="fab fa-linkedin"></i> <span class="ms-1">LinkedIn</span>
+            </a>
+            <a href="tel:+919999999999" class="btn btn-outline-gold">
+              <i class="fa-solid fa-phone"></i> <span class="ms-1">Phone</span>
+            </a>
+            <a href="mailto:aswin.r@example.com" class="btn btn-outline-gold">
+              <i class="fa-solid fa-envelope"></i> <span class="ms-1">Email</span>
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Right Content Section -->
+      <main class="col-lg-9 content-wrap d-flex flex-column min-vh-100">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-secondary px-3 sticky-top">
+          <a class="navbar-brand d-flex align-items-center" href="#" aria-label="Home">
+            <span class="brand-dot me-2"></span>
+            <span class="fw-bold name-gradient">Portfolio</span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link active" data-target="about" href="#">About</a></li>
+              <li class="nav-item"><a class="nav-link" data-target="education" href="#">Education</a></li>
+              <li class="nav-item"><a class="nav-link" data-target="experience" href="#">Experience</a></li>
+              <li class="nav-item"><a class="nav-link" data-target="projects" href="#">Projects</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" data-target="certifications" href="#">Certifications</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" data-target="skills" href="#">Skills</a></li>
+              <li class="nav-item"><a class="nav-link" data-target="contact" href="#">Contact</a></li>
+            </ul>
+
+            <a href="#" class="btn btn-gold shine-hover" aria-label="Download resume">
+              <i class="fa-solid fa-file-arrow-down me-2"></i> Resume
+            </a>
+          </div>
+        </nav>
+
+        <!-- Sections container (no vertical scroll; dynamic swapping) -->
+        <div class="sections position-relative flex-grow-1">
+          <!-- About -->
+          <section id="about" class="section active p-4">
+            <h2 class="section-title">About</h2>
+            <p class="section-subtext">
+              I design elegant, intuitive interfaces that reduce friction and elevate outcomes. My process blends research-driven decisions, systems thinking, and refined interaction design to create experiences that feel premium yet effortless.
+            </p>
+          </section>
+
+          <!-- Education -->
+          <section id="education" class="section p-4">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline mt-3">
+              <div class="timeline-item card-gold p-3">
+                <h5 class="mb-1">Master of Design, Interaction Design</h5>
+                <p class="mb-1 text-muted">National Institute of Design — 2022</p>
+                <span class="tag-gold">Distinction</span>
+              </div>
+              <div class="timeline-item card-gold p-3">
+                <h5 class="mb-1">Bachelor of Engineering, Computer Science</h5>
+                <p class="mb-1 text-muted">Anna University — 2020</p>
+                <span class="tag-gold">Top 5%</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- Experience -->
+          <section id="experience" class="section p-4">
+            <h2 class="section-title">Experience</h2>
+            <div class="row g-3 mt-1">
+              <div class="col-md-6">
+                <div class="card card-gold h-100 p-3">
+                  <h5>Senior UI/UX Designer — StudioX</h5>
+                  <p class="mb-0 text-muted">Led end‑to‑end design for SaaS analytics; shipped a design system; increased activation by 18%.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card card-gold h-100 p-3">
+                  <h5>Product Designer — FinHub</h5>
+                  <p class="mb-0 text-muted">Owned mobile onboarding flows; progressive disclosure and micro‑interactions reduced TFA by 24%.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card card-gold h-100 p-3">
+                  <h5>UI Designer — HealthSync</h5>
+                  <p class="mb-0 text-muted">Accessible patterns (WCAG AA), simplified clinician navigation, +16% task completion.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card card-gold h-100 p-3">
+                  <h5>Design Intern — Nova</h5>
+                  <p class="mb-0 text-muted">Prototyped motion guidelines for wearables; documented robust components.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Projects (Horizontal carousel grid, 2 visible) -->
+          <section id="projects" class="section p-4">
+            <h2 class="section-title">Projects</h2>
+
+            <div class="carousel-grid" data-carousel="projects" aria-label="Projects carousel">
+              <button class="carousel-arrow prev" aria-label="Previous">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button class="carousel-arrow next" aria-label="Next">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+
+              <div class="viewport card-gold">
+                <div class="track">
+                  <div class="grid-card card-gold p-3">
+                    <h5>InsightOS</h5>
+                    <p class="text-muted">Modular dashboard with real‑time filters and deep theming for multi‑tenant UI.</p>
+                  </div>
+                  <div class="grid-card card-gold p-3">
+                    <h5>FlowBoard</h5>
+                    <p class="text-muted">Kanban + calendar hybrid; contextual tooltips and bulk actions increased throughput.</p>
+                  </div>
+                  <div class="grid-card card-gold p-3">
+                    <h5>PulseCare</h5>
+                    <p class="text-muted">Patient summaries with glanceable vitals; compact hierarchy reduced cognitive load.</p>
+                  </div>
+                  <div class="grid-card card-gold p-3">
+                    <h5>SwiftPay</h5>
+                    <p class="text-muted">Frictionless checkout patterns; locale‑aware inputs and A/B tested microcopy.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Skills (Carousel/grid) -->
+          <section id="skills" class="section p-4">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="carousel-grid" data-carousel="skills" aria-label="Skills carousel">
+              <button class="carousel-arrow prev" aria-label="Previous">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button class="carousel-arrow next" aria-label="Next">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+
+              <div class="viewport card-gold">
+                <div class="track">
+                  <div class="grid-card card-gold p-3"><span class="badge pill-gold">User Research</span></div>
+                  <div class="grid-card card-gold p-3"><span class="badge pill-gold">Information Architecture</span></div>
+                  <div class="grid-card card-gold p-3"><span class="badge pill-gold">Wireframing</span></div>
+                  <div class="grid-card card-gold p-3"><span class="badge pill-gold">Prototyping</span></div>
+                  <div class="grid-card card-gold p-3"><span class="badge pill-gold">Interaction Design</span></div>
+                  <div class="grid-card card-gold p-3"><span class="badge pill-gold">Design Systems</span></div>
+                  <div class="grid-card card-gold p-3"><span class="badge pill-gold">Accessibility (WCAG)</span></div>
+                  <div class="grid-card card-gold p-3"><span class="badge pill-gold">Figma</span></div>
+                  <div class="grid-card card-gold p-3"><span class="badge pill-gold">Framer</span></div>
+                  <div class="grid-card card-gold p-3"><span class="badge pill-gold">HTML/CSS</span></div>
+                  <div class="grid-card card-gold p-3"><span class="badge pill-gold">JavaScript</span></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Certifications -->
+          <section id="certifications" class="section p-4">
+            <h2 class="section-title">Certifications</h2>
+
+            <div class="carousel-grid" data-carousel="certs" aria-label="Certifications carousel">
+              <button class="carousel-arrow prev" aria-label="Previous">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button class="carousel-arrow next" aria-label="Next">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+
+              <div class="viewport card-gold">
+                <div class="track">
+                  <div class="grid-card card-gold p-3">
+                    <h5>Google UX Design Professional Certificate</h5>
+                    <p class="text-muted mb-0">Human‑centered design, research synthesis, prototyping, iterative testing.</p>
+                  </div>
+                  <div class="grid-card card-gold p-3">
+                    <h5>Nielsen Norman Group UX Certification</h5>
+                    <p class="text-muted mb-0">IA, interaction design, usability testing, accessibility fundamentals.</p>
+                  </div>
+                  <div class="grid-card card-gold p-3">
+                    <h5>Adobe Certified Professional</h5>
+                    <p class="text-muted mb-0">Advanced visual design and component‑driven systems across platforms.</p>
+                  </div>
+                  <div class="grid-card card-gold p-3">
+                    <h5>HCI Specialization</h5>
+                    <p class="text-muted mb-0">Behavioral insights, mental models, decision architecture in complex flows.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Contact -->
+          <section id="contact" class="section p-4">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-subtext">Let’s build something elegant and useful. Share a bit about your goals and constraints.</p>
+            <form class="mt-2" onsubmit="event.preventDefault(); alert('Thank you! I will get back to you soon.');" aria-label="Contact form">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="name" class="form-label">Name</label>
+                  <input id="name" type="text" class="form-control input-gold" placeholder="Your name" required />
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input id="email" type="email" class="form-control input-gold" placeholder="name@example.com" required />
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea id="message" class="form-control input-gold" rows="5" placeholder="Project goals, timelines, or constraints..." required></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-gold shine-hover">
+                    <i class="fa-solid fa-paper-plane me-2"></i> Send message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-black border-top border-secondary text-center py-3">
+          <small class="name-gradient fw-semibold">© 2025 Aswin R — Crafted with clarity and care.</small>
+        </footer>
+      </main>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
